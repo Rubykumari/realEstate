@@ -8,9 +8,10 @@
     padding-right: 20px;
     display: flex;
     flex-direction: column;
+    background: white;
 
     @include lg {
-        background-color: rgb(247, 194, 174);
+        // background-color: rgb(247, 194, 174);
         max-width: 1200px;
     }
 
@@ -25,5 +26,6 @@
     }
     .content{
         flex: 1;
+        height: calc(100vh - 100px);
     }
 }

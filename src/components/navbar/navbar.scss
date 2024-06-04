@@ -19,7 +19,7 @@ nav {
     }
 
     .left {
-        flex: 60% 1;
+        flex: 3;
         display: flex;
         align-items: center;
         gap: 50px;
@@ -57,11 +57,11 @@ nav {
 
     .right {
         height: 100%;
-        flex: 40% 1;
+        flex: 2;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        background: #fcf5fc;
+        background: #fcf5f3;
 
         @include md {
             background: transparent;
