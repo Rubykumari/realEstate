@@ -17,7 +17,7 @@
 
     @include md {
         background-color: rgb(186, 205, 240);
-        max-width: 800px;
+        max-width: 1000px;
     }
 
     @include sm {
@@ -27,5 +27,6 @@
     .content{
         flex: 1;
         height: calc(100vh - 100px);
+        overflow: scroll;
     }
 }

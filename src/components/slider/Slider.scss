@@ -1,0 +1,76 @@
+.slider {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    gap: 20px;
+
+    .fullSlider {
+        display: flex;
+        background: black;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 50px;
+
+                &.rightArrow {
+                    transform: rotate(180deg);
+                }
+
+            }
+        }
+
+        .fullImgContainer {
+            flex: 11;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .close {
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 36px;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .bigImg {
+        flex: 3;
+    }
+
+    .smallImg {
+        flex: 1;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
