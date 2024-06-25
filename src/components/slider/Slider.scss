@@ -1,3 +1,5 @@
+@import '../../responsive.scss';
+
 .slider {
     display: flex;
     width: 100%;
@@ -14,7 +16,7 @@
         left: 0;
         justify-content: space-between;
         align-items: center;
-
+        z-index: 1;
         .arrow {
             flex: 1;
             display: flex;
@@ -23,6 +25,12 @@
 
             img {
                 width: 50px;
+                @include md{
+                    width: 30px;
+                }
+                @include sm{
+                    width: 20px;
+                }
 
                 &.rightArrow {
                     transform: rotate(180deg);

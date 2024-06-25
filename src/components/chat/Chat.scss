@@ -1,0 +1,95 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .messages{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+        h1{
+            font-weight: 300;
+        }
+        .message{
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            span{
+                font-weight: bold;
+            }
+        }
+
+    }
+    .chatBox{
+        flex: 1;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top{
+            background: #f7c14b85;
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            span{
+                cursor: pointer;
+            }
+        }
+        .center{
+            height: 350px;
+            overflow: scroll;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .chatMsg{
+                width: 50%;
+                &.own{
+                    align-self: flex-end;
+                    text-align: right;
+                }
+                span{
+                    font-size: 12px;
+                    background: #f7c14b39;
+                    padding: 2px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .bottom{
+            border-top: 2px solid #f7c14b85;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            textarea{
+                border: none;
+                flex: 3 1;
+                padding: 20px;
+                height: 100%;
+            }
+            button{
+                flex: 1;
+                height: 100%;
+            }
+        }
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
